@@ -1,0 +1,103 @@
+
+@media (min-width: 768px) {
+    .services {
+        &__title {
+            margin: 24px 0 32px 16px;
+            color: #1B1C21;
+            font-size: 28px;
+            line-height: 40px;
+        }
+        &__descr {
+            display: flex;
+            column-gap: 28px;
+        }
+    }
+    .header {
+        &__buttons {
+            &_visible {
+                display: flex;
+            }
+        }
+        &__button {
+            &_divided {
+                &::after{
+                    display: block;
+                } 
+            }
+        }
+        &__logo {
+            margin: 0 auto 0 24px;
+        }
+    }
+    .logo {
+        &_divided {
+            &::after{
+                display: none;
+            }
+        }
+    }
+    .descr {
+        min-width: 310px;
+        &__text {    
+            max-height: 160px;
+        }
+        &__img {
+            margin-right: 20px;            
+            max-width: 50%;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media (min-width: 1120px) {
+    .container {
+        width: 1120px;
+        padding: 40px 0;
+        position: relative;
+    }
+    .services {
+        
+        &__title {
+            margin: 0 0 32px 16px;
+            color: #1B1C21;
+            font-size: 28px;
+            line-height: 40px;
+        }
+        &__descr {
+            display: flex;
+            column-gap: 48px;
+        }
+    }
+    .header {
+        &_visible_true {
+            display: none;
+        }
+        &_visible_false {
+            position: absolute;
+            display: flex;
+            top: 40px;
+            right: 150px;
+        }
+        &__button {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+        &__button:last-child {
+            margin-left: 160px;
+        }
+        &__button-text {
+            display: inline;
+            margin: 0;
+            text-align: center;
+        }
+        &__button-img {
+            margin-left: 10px;
+        }
+    }
+    .nav {
+        &__list{
+            flex-wrap: wrap;        
+        }
+    }
+}
