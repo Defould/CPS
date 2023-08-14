@@ -21,7 +21,8 @@ body {
         min-height: 88px;
         padding: 18px 16px;
     }
-    &__title {
+    &__title {        
+        position: relative;
         margin: 24px 16px;
         color: #1B1C21;
         font-size: 28px;
@@ -107,7 +108,6 @@ body {
 }
 
 .title {
-    position: relative;
     font-weight: 700;
     &::before {
         content: url('../icons/highlight.svg');
@@ -144,6 +144,10 @@ body {
         font-weight: 500;        
         font-size: 16px;
         line-height: 24px;
+        transition: all .5s;
+        &:hover {
+            color: #3b3b3b;
+        }
     }
 }
 
