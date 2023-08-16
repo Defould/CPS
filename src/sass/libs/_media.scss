@@ -13,8 +13,8 @@
         }
     }
     .header {
-        &__buttons {
-            &_visible {
+        &__buttons-block {
+            &_hidden {
                 display: flex;
             }
         }
@@ -55,8 +55,7 @@
         padding: 40px 0;
         position: relative;
     }
-    .services {
-        
+    .services {        
         &__title {
             margin: 0 0 32px 16px;
             color: #1B1C21;
@@ -69,16 +68,17 @@
         }
     }
     .header {
-        &_visible_true {
+        &_visible {
             display: none;
         }
-        &_visible_false {
+        &_hidden {
             position: absolute;
             display: flex;
             align-items: center;
             gap: 8px;
             top: 40px;
             right: 16px;
+            z-index: 1;
         }
         &__button {
             white-space: nowrap;

@@ -8,9 +8,10 @@
 </head>
 <body>
     <section class="services">
-        <div class="container">
-            <header class="services__header header header_visible_true">
-                <button class="header__button menu header__button_divided">
+        <div class="container">   
+
+            <header class="services__header header header_visible">
+                <button class="header__button button header__button_divided">
                     <img src="icons/burger.svg" alt="иконка меню">
                 </button>
                 <div class="header__logo logo logo_divided">
@@ -19,35 +20,37 @@
                     </a>                    
                 </div>
 
-                <div class="header__buttons header__buttons_visible">
-                    <button class="header__button call">
+                <div class="header__buttons-block buttons-block header__buttons-block_hidden">
+                    <button class="header__button button">
                         <img src="icons/call.svg" alt="позвонить нам">
                     </button>
-                    <button class="header__button message">
+                    <button class="header__button button">
                         <img src="icons/chat.svg" alt="написать нам">
                     </button> 
-                    <button class="header__button login header__button_divided">
+                    <button class="header__button button header__button_divided">
                         <img src="icons/profile.svg" alt="войти">
                     </button>                    
                 </div>
 
-                <button class="header__button repair">
+                <button class="header__button button">
                     <img src="icons/repair.svg" alt="оставить заявку">
                 </button>
-                <button class="header__button check-status">
+                <button class="header__button button">
                     <img src="icons/checkstatus.svg" alt="статус ремонта">
                 </button>
             </header>
-            <header class="header header_visible_false">
+
+            <header class="header header_hidden">
                 <label class="header__button-text">Оставить заявку</label>
-                <button class="header__button repair">                    
+                <button class="header__button button">                    
                     <img class="header__button-img" src="icons/repair.svg" alt="оставить заявку">
                 </button>
                 <label class="header__button-text">Статус ремонта</label>
-                <button class="header__button check-status">
+                <button class="header__button button">
                     <img class="header__button-img" src="icons/checkstatus.svg" alt="статус ремонта">
                 </button>
             </header>
+            
             <main class="main">
                 <h1 class="services__title title">Услуги и сервисы</h1>
 
@@ -85,13 +88,12 @@
                             </p>
                         </div>
                         
-                        <button class="descr__button button">Читать далее</button>
+                        <button class="descr__button">Читать далее</button>
                     </div>
 
                     <img class="descr__img" src="img/services.png" alt="табличка СЦ">
                 </div> 
-            </main>
-                       
+            </main>                       
         </div>
     </section>
 </body>

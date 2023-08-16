@@ -1,5 +1,4 @@
 body {
-    min-width: 320px;
     box-sizing: border-box;
     font-family: 'TT Lakes';
     font-style: normal;
@@ -10,6 +9,18 @@ body {
     margin: 0 auto;
 }
 
+.button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+        transition: all .5s;
+    }
+}
 
 .services {
     width: 100%;
@@ -49,28 +60,21 @@ body {
     display: flex;
     column-gap: 16px;
     align-items: center;
-    &_visible_true {
+    &_visible {
         display: flex;
     }
-    &_visible_false {
+    &_hidden {
         display: none;
     }
-    &__buttons {
-        display: flex;
+    &__buttons-block {
         column-gap: 16px;
         margin-right: 24px;
-        &_visible {
-            display: none;
-        }
+            &_hidden {
+                display: none;
+            }
     }
     &__button {
         position: relative;
-        width: 40px;
-        height: 40px;
-        padding: 0;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
         &_divided {
             &::after{
                 content: '';
@@ -86,12 +90,12 @@ body {
         }
     }
     &__logo {
-        position: relative;
         margin-right: auto;        
     } 
 }
 
 .logo {
+    position: relative;
     &_divided {
         &::after{
             content: '';
