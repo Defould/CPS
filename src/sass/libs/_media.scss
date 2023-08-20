@@ -1,22 +1,7 @@
-
-@media (min-width: 768px) {
-    .services {
-        &__title {
-            margin: 24px 0 32px 16px;
-            color: #1B1C21;
-            font-size: 28px;
-            line-height: 40px;
-        }
-        &__descr {
-            display: flex;
-            column-gap: 28px;
-        }
-    }
+@media (min-width: 576px) {
     .header {
         &__buttons-block {
-            &_hidden {
-                display: flex;
-            }
+            display: flex;
         }
         &__button {
             &_divided {
@@ -36,60 +21,77 @@
             }
         }
     }
+}
+
+@media (min-width: 768px) {
+    .main {
+        &__descr {
+            display: flex;
+            column-gap: 28px;
+        }
+    }
+    .header {
+        &__button {
+            &_divided {
+                &::after{
+                    display: block;
+                } 
+            }
+        }
+        &__logo {
+            margin: 0 auto 0 24px;
+        }
+    }
     .descr {
         min-width: 310px;
-        &__text {    
+        &__text {  
             max-height: 160px;
         }
-        &__img {
-            margin-right: 20px;            
-            max-width: 50%;
+        &__img {           
+            width: 50%;
             border-radius: 5px;
         }
     }
 }
 
-@media (min-width: 1120px) {
-    .container {
-        width: 1120px;
-        padding: 40px 0;
-        position: relative;
+@media (min-width: 992px) {
+    .main {  
+        padding: 30px 24px;
     }
-    .services {        
-        &__title {
-            margin: 0 0 32px 16px;
-            color: #1B1C21;
-            font-size: 28px;
-            line-height: 40px;
-        }
-        &__descr {
+    .header-block {
+        &__buttons {
             display: flex;
-            column-gap: 48px;
-        }
+        }        
+    }
+    .descr {
+        max-width: 50%;
     }
     .header {
-        &_visible {
-            display: none;
-        }
-        &_hidden {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            top: 40px;
-            right: 16px;
-            z-index: 1;
-        }
-        &__button {
-            white-space: nowrap;
-            &-text {
-                margin-left: 15px;
-            }
+        display: none;
+    }    
+    .title {
+        &::before {
+            left: -24px;
         }
     }
+}
+
+
+@media (min-width: 1440px) {
+    .wraper {
+        &__aside-menu {
+            display: flex;
+        }
+    }
+    .main {
+        margin-left: 320px;
+    }
+    .button-close {
+        display: none;
+    }
     .nav {
-        &__list{
-            flex-wrap: wrap;        
+        &__list {
+            flex-wrap: wrap;
         }
     }
 }
