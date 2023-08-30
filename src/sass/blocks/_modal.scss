@@ -1,0 +1,35 @@
+.modal {
+    &__container {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height: 100vh;
+        padding: 18px 16px;
+        z-index: 100;
+        background-color: #fff;
+    }
+    &__descr {
+        margin-bottom: 24px;
+        color: $textSecond;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+    }
+    &__descr-link {
+        text-decoration: none;
+        color: #FF3E79;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        &:hover {
+            color: #FF3E79;
+        }
+        &:visited {
+            color: #c72a2a;
+        }
+    }
+    &__button {
+        margin-left: auto;
+    }
+}

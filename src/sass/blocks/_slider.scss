@@ -1,0 +1,84 @@
+.slider {
+	overflow: hidden;
+	&__card {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;	
+		min-height: 78px;	
+		padding: 16px;
+		border-radius: 6px;
+		border: 1px solid #EAEAEA;
+		background: #FFF;
+	}
+	&__card-logo {
+		max-height: 40px;
+	}
+	&__card-link {
+		width: 40px;
+		height: 40px;
+		background-color: transparent;
+	}
+	&__pagination {
+		height: 12px;
+		position: relative;
+		margin-bottom: 24px;
+	}
+	&__spoiler {
+		display: none;
+		background-color: transparent;
+		border: none;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+	}
+}
+
+.swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+}
+.swiper-pagination-bullet-active {
+	background-color: rgb(151, 151, 151);
+}
+
+@media (min-width: 768px) {
+    .slider {
+        overflow: hidden;
+        &__content {
+            display: grid;
+            grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+            gap: 16px;
+			margin-bottom: 16px;
+        }
+        &__pagination {
+            display: none;
+        }
+        &__spoiler {
+            display: block;
+        }
+        &::before {
+            display: none;
+        }        
+    }
+}
+
+@media (min-width: 992px) {
+    .slider {
+        &__content {
+            grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+            gap: 16px / 32px;
+        }      
+    }
+}
+
+@media (max-width: 767px) {
+    .slider {
+        &__content {
+            display: flex;
+            gap: 0;
+        }  
+        &__pagination {
+            display: block;
+        }      
+    }
+}

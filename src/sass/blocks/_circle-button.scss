@@ -1,0 +1,43 @@
+.circle-button {	        
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;	
+	&_devided {
+		position: relative;
+		&::after{
+			content: '';
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 60px;
+			transform: translateY(-50%);
+			width: 2px;
+			height: 32px;
+			background: #EAEAEA;
+		} 
+	}
+	&:hover{
+		transform: scale(1.1);
+		transition: all .3s;
+	}
+}
+
+@media (min-width: 576px) {
+    .circle-button {
+		&_devided {
+			&::after{
+				display: block;
+			} 
+		}
+    }
+}
+@media (min-width: 1440px) {
+    .circle-button {
+		&_visible {
+			display: none;
+		}
+    }
+}

@@ -1,0 +1,33 @@
+.descr {
+	&__text {        
+		overflow: hidden;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
+        transition: all .5s;
+	}    
+	&__img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 35px;
+	}
+}
+
+@media (min-width: 768px) {
+    .descr {        
+        &__text {  
+            min-width: 310px;
+            max-height: 100%;
+        }
+        &__img {           
+            width: 50%;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .descr {
+        max-width: 50%;
+    }
+}

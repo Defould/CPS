@@ -1,0 +1,69 @@
+@import '../libs/variables';
+
+.modal-burger {
+	transform: translateX(-100vw);
+	&__header {
+		display: flex;
+		column-gap: 16px;
+		align-items: center;
+		margin-bottom: 38px;
+	}
+	&__button-close {
+		display: block;
+	}
+	&__logo {
+		margin-right: auto;
+	}
+	&__nav {        
+		margin-bottom: auto;
+	}
+	&__list {
+		padding: 0;
+		list-style-type: none;        
+	}
+	&__item {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		margin-bottom: 32px;
+	}
+	&__link {
+		position: relative;
+		color: $textMain;
+		text-decoration: none;
+		&:hover {
+			color: $textMain;
+		}
+		&_active {
+			color: $textSecond;
+			&::before {
+				content: url('../icons/highlight.svg');
+				position: absolute;
+				top: -40%;
+				left: -16px;
+			}
+		}
+	}
+	&__buttons {
+		display: flex;
+		margin-bottom: 16px;
+	}
+	&__contacts {
+		margin-bottom: 40px;
+	}
+	&__languages {
+		display: flex;
+		gap: 7px;
+	}
+}
+
+@media (min-width: 1440px) {
+    .modal-burger {
+		display: block;
+		transform: translateX(0);
+		// left: calc(50vw - 730px);
+		&__button-close {
+			display: none;
+		}
+    }
+}

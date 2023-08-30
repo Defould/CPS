@@ -1,5 +1,45 @@
 @import 'libs/_bootstrap-reboot.min';
-@import 'libs/fonts';
-@import 'libs/variables';
-@import './_general';
-@import 'libs/_media';
+@import 'libs/_fonts';
+@import 'libs/_variables';
+
+//общие блоки
+@import 'blocks/_body';
+@import 'blocks/_spoiler-button';
+@import 'blocks/_circle-button';
+@import 'blocks/_oval-button';
+@import 'blocks/_buttons-block';
+@import 'blocks/_title';
+@import 'blocks/_subtitle';
+@import 'blocks/_logo';
+@import 'blocks/_slider';
+@import 'blocks/_blur';
+
+//главный блок
+@import 'blocks/_main';
+@import 'blocks/_wraper.scss';
+@import 'blocks/_nav';
+
+//модалки
+@import 'blocks/_modal';
+@import 'blocks/_form';
+@import 'blocks/_modal-burger';
+@import 'blocks/_modal-message';
+@import 'blocks/_modal-call';
+@import 'blocks/_modal-open';
+@import 'blocks/_contacts';
+@import 'blocks/_languages';
+
+//главный экран
+@import 'blocks/_header';
+@import 'blocks/_header-block';
+@import 'blocks/_main-descr';
+
+//бренды/виды техники/прайс
+@import 'blocks/_brands';
+@import 'blocks/_types';
+@import 'blocks/_price';
+
+//футер
+@import 'blocks/_footer';
+
+@import 'blocks/_hidden-block';

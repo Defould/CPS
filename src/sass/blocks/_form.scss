@@ -1,0 +1,30 @@
+@import '../libs/variables';
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &__input {
+        height: 50px;
+        margin-bottom: 16px;
+        padding: 12px 16px;
+        border-radius: 8px;
+        color: $textMain;
+        border: 1px solid #EAEAEA;
+        ::placeholder {
+            color: #B5B6BC;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+    &__text {
+        height: 120px;
+        margin-bottom: 16px;
+        padding: 12px 16px;
+        border-radius: 8px;
+        color: #EAEAEA;
+        border: 1px solid #EAEAEA;
+        resize: none;
+    }
+}

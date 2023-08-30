@@ -1,0 +1,24 @@
+.wraper {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1440px;
+	height: 100vh;
+	&__modal {		
+		position: fixed;
+        transition: all .5s ease;
+		z-index: 50;
+	}
+	&__header {
+		background-color: #fff;
+		width: 100%;
+		min-height: 88px;
+		padding: 18px 16px;
+		margin-bottom: 24px;
+	}
+	&__title {        
+		position: relative;
+		margin-bottom: 24px;
+		font-size: 28px;
+		line-height: 40px;
+	}    
+}

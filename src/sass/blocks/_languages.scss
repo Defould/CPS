@@ -1,0 +1,14 @@
+@import '../libs/variables';
+
+.languages {
+	&__item {
+		border: none;
+		background-color: transparent;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		&_active {
+			color: $textSecond;
+		}
+	}
+}

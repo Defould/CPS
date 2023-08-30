@@ -1,0 +1,12 @@
+@import '../libs/variables';
+
+.modal-message {
+    transform: translateX(100vw);
+    &__button-close {
+        margin-bottom: 40px;
+    }
+    &__title {
+        position: relative;
+        margin-bottom: 24px;
+    }
+}

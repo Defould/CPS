@@ -1,0 +1,19 @@
+.header-block {
+	&__buttons {
+		display: none;
+		align-items: center;
+		column-gap: 8px;
+	}
+	&__text {
+		margin-left: 24px;
+
+	}
+}
+
+@media (min-width: 992px) {
+    .header-block {
+        &__buttons {
+            display: flex;
+        }        
+    }
+}

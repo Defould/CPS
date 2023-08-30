@@ -1,0 +1,21 @@
+.blur {
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 100%;
+        z-index: 10;
+        background: linear-gradient(270deg, #F8F8F8 0.04%, rgba(248, 248, 248, 0.00) 100%);
+    } 
+}
+
+@media (min-width: 768px) {
+    .blur {
+        &::after {
+            display: none;
+        } 
+    }
+}

@@ -1,0 +1,26 @@
+.logo {
+	position: relative;
+	&_divided {
+		&::after{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 115px;
+			transform: translateY(-50%);
+			width: 2px;
+			height: 32px;
+			background: #EAEAEA;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+    .logo {
+        &_divided {
+            &::after{
+                display: none;
+            }
+        }
+    }
+}

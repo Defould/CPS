@@ -1,0 +1,22 @@
+@import '../libs/variables';
+
+.contacts {
+	&__mail {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px; 
+	}
+	&__phone {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 32px;
+	}
+	&__link {
+		color: $textMain;
+		text-decoration: none;
+		transition: all .3s;
+		&:hover {
+			color: $textSecond;
+		}
+	}
+}

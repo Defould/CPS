@@ -1,0 +1,11 @@
+@import '../libs/_variables';
+
+.subtitle {
+	margin-bottom: 24px;
+	color: $textSecond;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	background: linear-gradient(-270deg, #F8F8F8 0%, #FFF 100%);
+}

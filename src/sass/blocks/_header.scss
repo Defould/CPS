@@ -1,0 +1,29 @@
+.header {    
+	display: flex;
+	column-gap: 16px;
+	align-items: center;
+	&__buttons-block {
+		display: none;
+		margin-right: 24px;
+	}
+	&__logo {
+		margin-right: auto;        
+	} 
+}
+
+@media (min-width: 576px) {
+    .header {
+        &__buttons-block {
+            display: flex;
+        }
+        &__logo {
+            margin: 0 auto 0 24px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        display: none;
+    }
+}

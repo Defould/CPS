@@ -1,0 +1,25 @@
+.spoiler-button {
+	position: relative;
+	min-width: 100px;
+	margin: 0 auto 24px 16px;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;	
+	&::before {
+		content: url(../icons/down_arrows.svg);
+		display: block;
+		position: absolute;
+		left: -24px;
+		width: 24px;
+		height: 24px;
+	}
+	&_open {
+		&::before {
+			transform: rotate(180deg);
+		}
+	}
+}
