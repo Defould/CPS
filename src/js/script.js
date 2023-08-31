@@ -75,7 +75,7 @@ function toggleSpoiler(e) {
 
 
 //модалки
-const burgerOpen = document.querySelector('[data-burger]');
+const burgerOpen = document.querySelectorAll('[data-burger]');
 const messageOpen = document.querySelectorAll('[data-message]');
 const callOpen = document.querySelectorAll('[data-call]');
 const modalCloseBtns = document.querySelectorAll('.button-close');
@@ -90,20 +90,11 @@ function toggleModal(openTriggers, modalSelector, closeTriggers) {
     const closeBtns = closeTriggers;
     const modal = modalSelector;
 
-    if(NodeList.prototype.isPrototypeOf(openBtns)) {
-       openBtns.forEach(openBtn => openBtn.addEventListener('click', () => {
-            modal.classList.add('modal-open');
-            document.body.style.overflow = 'hidden';
-            wraperContent.style.filter = 'blur(5px)';
-        })); 
-    } else {
-        openBtns.addEventListener('click', () => {
-            modal.classList.add('modal-open');
-            document.body.style.overflow = 'hidden';
-            wraperContent.style.filter = 'blur(5px)';
-        });
-    }
-    
+    openBtns.forEach(openBtn => openBtn.addEventListener('click', () => {
+        modal.classList.add('modal-open');
+        document.body.style.overflow = 'hidden';
+        wraperContent.style.filter = 'blur(5px)';
+    }));
 
     closeBtns.forEach(closeBtn => closeBtn.addEventListener('click', () => {
         modal.classList.remove('modal-open');

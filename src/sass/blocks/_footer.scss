@@ -1,8 +1,9 @@
 @import '../libs/variables';
 
 .footer {
+	max-width: 1120px;
 	&__wraper {
-		padding: 20px 0;
+		padding: 20px 16px;
 		text-align: center;
 		color: $textSecond;
 		font-size: 14px;
@@ -16,5 +17,10 @@
             display: flex;
             justify-content: space-between;
         }
+    }
+}
+@media (min-width: 1440px) {    
+    .footer {
+        transform: translate(320px);
     }
 }
