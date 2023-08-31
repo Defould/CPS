@@ -75,9 +75,6 @@ function toggleSpoiler(e) {
 
 
 //модалки
-const modals = document.querySelectorAll('.modal');
-console.log(modals);
-
 const burgerOpen = document.querySelector('[data-burger]');
 const messageOpen = document.querySelectorAll('[data-message]');
 const callOpen = document.querySelectorAll('[data-call]');

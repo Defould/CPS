@@ -1,12 +1,11 @@
 
 .hidden-block {
-    max-height: 90px;
-    overflow: hidden;
     margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
     .hidden-block {
         max-height: 175px;
+        overflow: hidden;
     }
 }
